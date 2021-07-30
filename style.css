@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+
+  dt {
+    font-weight: bold;
+  }
+  
+  body {
+    font-family: 'Nanum Gothic', sans-serif;
+    /* font-family: 'Nanum Myeongjo', serif; */
+    color: #444;
+    font-size: 16px;
+  }
+  
+  section h2 {
+    font-size: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+  }
+
+  #title img {
+    width: 100%;
+    height: 30vh;
+    /* 비율을 유지하면서 채움 */
+    object-fit: cover;  
+  }
+
+  .container { 
+    padding: 20px;
+  }
+
+  #title h2 {
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+
+  #title .introText {
+    width: 100%;
+    height: 20vh;
+    /* background: #ccc; */
+    /* 수평우측 */
+    justify-content: flex-center;
+    /* 수직하단 */
+    align-items: flex-center;
+    text-align: center;
+    padding-top: 40px;
+    margin-bottom: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-weight: 700;
+  }
+
+  #title .introText .container {
+    font-family:  'Nanum Gothic', sans-serif;
+    font-size: 16px;
+  }
+  
+  #title .introText p {
+    color: #606060;
+    line-height: 24px;
+  }
+  
+  #title .container {
+    padding-bottom: 40px;
+  }
+  
+  #invitation {
+    background: #F1F1F1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #invitation .container {
+    background: #fff;
+    border-radius: 20px;
+    font-family: 'Nanum Myeongjo', serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  
+  /* 초대글 영역: 줄간격, 문단 간격 추가 */
+  #invitation h2 {
+    margin-bottom: 30px;
+    font-size: 20px;
+  }
+  
+  #invitation p {
+    line-height: 30px;
+    margin-bottom: 24px;
+  }
+  
+  #invitation .guestInfo {
+    margin-top: 50px;
+    font-weight: bold;
+  }
+  
+  #invitation .guestInfo span{
+    font-size: 14px;
+  }
+  
+  #call .banner {
+    height: 90px;
+    background: #999;
+    font-family: 'Nanum Myeongjo', serif;
+    line-height: 90px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #call .phone {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  #call .phone  li{
+    display: inline-block;
+  }
+  
+  #call .phone  li:first-child {
+    margin-right: 50px;
+  }
+
+  #call .phone li p {
+    margin-top: 10px;
+  }
+
+  #gallery .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  #gallery h2 {
+    margin-bottom: 30px;
+  }
+
+  #gallery figure {
+    width: 100%;
+    height: 210px;
+  }
+
+  #gallery figure > img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+  }
+
+  #gallery .galleryList {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #gallery .galleryList li {
+    width: calc((100% - 20px) / 3);
+    margin-right: 10px;
+    margin-top: 10px;
+    height: 106px;
+  }
+
+  #gallery .galleryList li:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  #gallery .galleryList li img {
+    width: 100%;
+    height: 106px;
+    object-fit: cover;
+  }
+
+  #video {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+  }
+
+  #video h2 {
+    margin-bottom: 30px;
+  }
+
+  /* 비디오 컨테이너: 16;9 비율로 제작 */
+  .video {
+    padding-bottom: 56.25%; /* 100분률로 환산한 높이 */
+    background: #ccc;
+    position: relative;
+  }
+
+  .video iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  #video p {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Nanum Myeongjo', sans-serif;
+    margin-top: 30px;
+  }
+  
+  #map {
+    text-align: center;
+    padding-top: 40px;
+  }
+
+  #map h2 {
+    margin-bottom: 30px;
+  }
+
+  #map .appLink {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+  }
+
+  #map .appLink li:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  #map .container {
+    padding-top: 30px;
+  }
+
+  #map .transfer {
+    text-align: left;
+    line-height: 24px;
+  }
+
+  #map .transfer dt {
+    margin-top: 20px;
+  }
+
+  footer {
+    text-align: center;
+    background: #575757;
+    color: #fff;
+    padding: 20px;
+  }
+
+  footer a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+  }
+
+  footer p {
+    color: #fff;
+    line-height: 24px;    
+  }
